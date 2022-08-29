@@ -6,9 +6,11 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] float _moveSpeed = 15;
+    [SerializeField] float _jumpForce = 30;
     [SerializeField] Rigidbody2D _rigidbody;
     [SerializeField] Animator _animator;
     [SerializeField] SpriteRenderer _spriteRenderer;
+    Vector2 _direction;
 
     void Start()
     {
@@ -17,8 +19,19 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        //Seperate out movement into another script and have the script communicate to the player with delegates if possible.
+        //Either way seperate out the input handeling into Update() and the RB stuff into Fixed Update()
+    }
+
+    void FixedUpdate()
+    {
+        HandleMovement();
+    }
+
+    void HandleMovement()
+    {
         float x = Input.GetAxis("Horizontal") * _moveSpeed * Time.deltaTime;
-        Vector3 _direction = new Vector3(x, 0, 0);
+        _direction = new Vector2(x, 0);
 
         if (Input.GetKey(KeyCode.A) == false && Input.GetKey(KeyCode.D) == false)
         {
@@ -27,19 +40,29 @@ public class Player : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A))
         {
-            MovePlayer(_direction, _moveSpeed, true);
+            MovePlayer();
+            _spriteRenderer.flipX = true;
         }
 
         else if (Input.GetKey(KeyCode.D))
         {
-            MovePlayer(_direction, _moveSpeed, false);
+            MovePlayer();
+            _spriteRenderer.flipX = false;
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+            Jump();
     }
 
-    void MovePlayer(Vector2 direction, float moveSpeed, bool flipX)
+    void MovePlayer()
     {
-        _rigidbody.AddForce(direction * moveSpeed * Time.deltaTime);
+        _rigidbody.AddForce(_direction * _moveSpeed * Time.deltaTime, ForceMode2D.Impulse);
         _animator.SetBool("isRunning", true);
-        _spriteRenderer.flipX = flipX;
+    }
+
+    void Jump()
+    {
+        _rigidbody.AddForce(Vector2.up * _jumpForce * Time.deltaTime, ForceMode2D.Impulse);
+        Debug.Log("Jump");
     }
 }

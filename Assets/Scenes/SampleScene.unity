@@ -137,8 +137,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 218826077, guid: 6eccaf14acce11c418aef48586cc375f, type: 3}
+      propertyPath: _jumpForce
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 218826077, guid: 6eccaf14acce11c418aef48586cc375f, type: 3}
       propertyPath: _moveSpeed
-      value: 100
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 218826077, guid: 6eccaf14acce11c418aef48586cc375f, type: 3}
       propertyPath: _rigidbody
@@ -148,6 +152,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3308179692884006131, guid: 6eccaf14acce11c418aef48586cc375f,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3308179692884006141, guid: 6eccaf14acce11c418aef48586cc375f,
         type: 3}
@@ -214,6 +223,11 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 750f6a74ae071a14c919c743f55e7d00, type: 2}
+    - target: {fileID: 4908266347528464377, guid: 6eccaf14acce11c418aef48586cc375f,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4908266347528464377, guid: 6eccaf14acce11c418aef48586cc375f,
         type: 3}
       propertyPath: m_Constraints
