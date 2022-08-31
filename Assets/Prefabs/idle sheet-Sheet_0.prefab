@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2141535243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2141535244}
+  m_Layer: 3
+  m_Name: Feet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2141535244
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141535243}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.1558, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3308179692884006141}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3308179692884006130
 GameObject:
   m_ObjectHideFlags: 0
@@ -15,7 +46,7 @@ GameObject:
   - component: {fileID: 4200973470956498709}
   - component: {fileID: 218826081}
   - component: {fileID: 4908266347528464377}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: idle sheet-Sheet_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33,7 +64,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2141535244}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -102,7 +134,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: a04cc07c7447d184697d7866418f5ce2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -121,11 +153,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00d8b51d4c8c4a2419c0124254cba4b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 15
-  _jumpForce: 30
-  _rigidbody: {fileID: 0}
+  _moveSpeed: 2500
+  _jumpForce: 300
+  _rigidbody: {fileID: 4908266347528464377}
   _animator: {fileID: 3308179692884006131}
   _spriteRenderer: {fileID: 3308179692884006140}
+  feet: {fileID: 2141535244}
 --- !u!114 &4200973470956498709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,6 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de335b5bc4cd42545b88c9d692c96a13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _player: {fileID: 218826077}
 --- !u!70 &218826081
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -167,11 +201,11 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 2
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 750f6a74ae071a14c919c743f55e7d00, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
