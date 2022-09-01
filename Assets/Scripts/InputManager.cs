@@ -15,7 +15,10 @@ public class InputManager : MonoBehaviour
         _inputActions = new InputActions();
         _inputActions.Player.Enable();
         _inputActions.Player.Jump.performed += Jump_performed;
+        _inputActions.Player.Slide.started += Slide_started;
+        _inputActions.Player.Slide.canceled += Slide_canceled;
     }
+   
 
     void Update()
     {
@@ -31,5 +34,15 @@ public class InputManager : MonoBehaviour
     void Jump_performed(InputAction.CallbackContext obj)
     {
         _player.Jump();
+    }
+
+    private void Slide_started(InputAction.CallbackContext obj)
+    {
+        _player.Slide(true);
+    }
+
+    private void Slide_canceled(InputAction.CallbackContext obj)
+    {
+        _player.Slide(false);
     }
 }
