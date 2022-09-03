@@ -143,6 +143,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3308179692884006140, guid: 6eccaf14acce11c418aef48586cc375f,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3308179692884006141, guid: 6eccaf14acce11c418aef48586cc375f,
         type: 3}
       propertyPath: m_RootOrder

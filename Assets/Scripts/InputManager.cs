@@ -18,7 +18,6 @@ public class InputManager : MonoBehaviour
         _inputActions.Player.Slide.started += Slide_started;
         _inputActions.Player.Slide.canceled += Slide_canceled;
     }
-   
 
     void Update()
     {
@@ -26,7 +25,7 @@ public class InputManager : MonoBehaviour
 
         if (_moveDirection == Vector2.zero)
             _player.Idle();
-
+            
         else if (_moveDirection != Vector2.zero)
             _player.MovePlayer(_moveDirection);
     }
@@ -36,12 +35,12 @@ public class InputManager : MonoBehaviour
         _player.Jump();
     }
 
-    private void Slide_started(InputAction.CallbackContext obj)
+    void Slide_started(InputAction.CallbackContext obj)
     {
         _player.Slide(true);
     }
 
-    private void Slide_canceled(InputAction.CallbackContext obj)
+    void Slide_canceled(InputAction.CallbackContext obj)
     {
         _player.Slide(false);
     }

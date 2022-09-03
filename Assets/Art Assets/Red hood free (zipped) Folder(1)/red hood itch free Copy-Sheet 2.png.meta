@@ -1,0 +1,357 @@
+fileFormatVersion: 2
+guid: a699b25fa850c1e4289576cde7504506
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: red hood itch free Copy-Sheet 3_52
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 834
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250f17ccfcae32049a098b75721ce888
+      internalID: -1986005041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red hood itch free Copy-Sheet 3_53
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 834
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa08783d52070c343b48ffe255e72207
+      internalID: 1344078796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red hood itch free Copy-Sheet 3_54
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 834
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a350e6fe7f01b3148b00aa67a1ba75d4
+      internalID: 1479580607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red hood itch free Copy-Sheet 3_55
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 834
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb1e6c09a7cd684381c6e485177f0f5
+      internalID: -1206130548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8cf5735cdafe6634986cc20b2f16ef68
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      red hood itch free Copy-Sheet 3_57: 1417255369
+      red hood itch free Copy-Sheet 3_117: 382323423
+      red hood itch free Copy-Sheet 3_61: -1603149865
+      red hood itch free Copy-Sheet 3_74: -1272349830
+      red hood itch free Copy-Sheet 3_55: -1206130548
+      red hood itch free Copy-Sheet 3_101: -678276189
+      red hood itch free Copy-Sheet 3_121: 1891019999
+      red hood itch free Copy-Sheet 3_102: -543271942
+      red hood itch free Copy-Sheet 3_36: -1052690721
+      red hood itch free Copy-Sheet 3_72: -1590942228
+      red hood itch free Copy-Sheet 3_7: -411352734
+      red hood itch free Copy-Sheet 3_63: 1085187779
+      red hood itch free Copy-Sheet 3_13: 772490139
+      red hood itch free Copy-Sheet 3_34: 1049862962
+      red hood itch free Copy-Sheet 3_47: -1874546049
+      red hood itch free Copy-Sheet 3_95: 1667772176
+      red hood itch free Copy-Sheet 3_46: -21980156
+      red hood itch free Copy-Sheet 3_58: 1986042516
+      red hood itch free Copy-Sheet 3_85: 1381828871
+      red hood itch free Copy-Sheet 3_5: 152465404
+      red hood itch free Copy-Sheet 3_56: 1975584849
+      red hood itch free Copy-Sheet 3_69: 838338213
+      red hood itch free Copy-Sheet 3_65: 1739555201
+      red hood itch free Copy-Sheet 3_30: 1108195784
+      red hood itch free Copy-Sheet 3_25: -416259492
+      red hood itch free Copy-Sheet 3_29: -16005007
+      red hood itch free Copy-Sheet 3_40: -1307149628
+      red hood itch free Copy-Sheet 3_38: 1753164829
+      red hood itch free Copy-Sheet 3_79: -1153547379
+      red hood itch free Copy-Sheet 3_66: 607759671
+      red hood itch free Copy-Sheet 3_52: -1986005041
+      red hood itch free Copy-Sheet 3_3: 588956728
+      red hood itch free Copy-Sheet 3_8: 496431791
+      red hood itch free Copy-Sheet 3_49: -473100115
+      red hood itch free Copy-Sheet 3_103: -446615929
+      red hood itch free Copy-Sheet 3_50: 1555659986
+      red hood itch free Copy-Sheet 3_43: -473590075
+      red hood itch free Copy-Sheet 3_60: -788892004
+      red hood itch free Copy-Sheet 3_99: -1445477944
+      red hood itch free Copy-Sheet 3_124: -1406319984
+      red hood itch free Copy-Sheet 3_53: 1344078796
+      red hood itch free Copy-Sheet 3_97: 2019780667
+      red hood itch free Copy-Sheet 3_113: -854825270
+      red hood itch free Copy-Sheet 3_2: -1319547519
+      red hood itch free Copy-Sheet 3_92: -121798627
+      red hood itch free Copy-Sheet 3_20: -1666594040
+      red hood itch free Copy-Sheet 3_100: -2013190150
+      red hood itch free Copy-Sheet 3_108: 502369971
+      red hood itch free Copy-Sheet 3_22: 199577154
+      red hood itch free Copy-Sheet 3_4: 2093299779
+      red hood itch free Copy-Sheet 3_80: -1050733712
+      red hood itch free Copy-Sheet 3_11: -1615583082
+      red hood itch free Copy-Sheet 3_18: -1392105927
+      red hood itch free Copy-Sheet 3_111: -1853054778
+      red hood itch free Copy-Sheet 3_105: -136545220
+      red hood itch free Copy-Sheet 3_39: 1919713421
+      red hood itch free Copy-Sheet 3_9: -556987675
+      red hood itch free Copy-Sheet 3_70: -623515343
+      red hood itch free Copy-Sheet 3_59: -585192004
+      red hood itch free Copy-Sheet 3_68: 1567002542
+      red hood itch free Copy-Sheet 3_24: -948825754
+      red hood itch free Copy-Sheet 3_48: -320242579
+      red hood itch free Copy-Sheet 3_35: -2052253249
+      red hood itch free Copy-Sheet 3_71: -1519295742
+      red hood itch free Copy-Sheet 3_78: -1078392510
+      red hood itch free Copy-Sheet 3_94: 1877933432
+      red hood itch free Copy-Sheet 3_119: -1643638461
+      red hood itch free Copy-Sheet 3_123: 712993447
+      red hood itch free Copy-Sheet 3_32: 2145662906
+      red hood itch free Copy-Sheet 3_122: 174044750
+      red hood itch free Copy-Sheet 3_116: 667151576
+      red hood itch free Copy-Sheet 3_98: 1725888312
+      red hood itch free Copy-Sheet 3_109: 1545889090
+      red hood itch free Copy-Sheet 3_37: -692605076
+      red hood itch free Copy-Sheet 3_89: -243889666
+      red hood itch free Copy-Sheet 3_86: 315718468
+      red hood itch free Copy-Sheet 3_10: 478148113
+      red hood itch free Copy-Sheet 3_75: -768228930
+      red hood itch free Copy-Sheet 3_114: 1833696231
+      red hood itch free Copy-Sheet 3_23: -558742524
+      red hood itch free Copy-Sheet 3_64: 1406124296
+      red hood itch free Copy-Sheet 3_93: 1384217130
+      red hood itch free Copy-Sheet 3_42: 396262988
+      red hood itch free Copy-Sheet 3_6: -1651958691
+      red hood itch free Copy-Sheet 3_14: -500130515
+      red hood itch free Copy-Sheet 3_41: 424729352
+      red hood itch free Copy-Sheet 3_82: 147078619
+      red hood itch free Copy-Sheet 3_84: -1005589362
+      red hood itch free Copy-Sheet 3_73: 1271580076
+      red hood itch free Copy-Sheet 3_90: 458730489
+      red hood itch free Copy-Sheet 3_112: 766937753
+      red hood itch free Copy-Sheet 3_118: -862590924
+      red hood itch free Copy-Sheet 3_126: 2004004832
+      red hood itch free Copy-Sheet 3_21: -1065943060
+      red hood itch free Copy-Sheet 3_26: -1235385064
+      red hood itch free Copy-Sheet 3_17: -234244922
+      red hood itch free Copy-Sheet 3_51: 258698072
+      red hood itch free Copy-Sheet 3_96: 16987954
+      red hood itch free Copy-Sheet 3_81: -1315731194
+      red hood itch free Copy-Sheet 3_12: -183815119
+      red hood itch free Copy-Sheet 3_76: -633523201
+      red hood itch free Copy-Sheet 3_87: 137920512
+      red hood itch free Copy-Sheet 3_106: -1294540093
+      red hood itch free Copy-Sheet 3_28: -255928280
+      red hood itch free Copy-Sheet 3_44: -482393533
+      red hood itch free Copy-Sheet 3_27: 1870025659
+      red hood itch free Copy-Sheet 3_45: 468741091
+      red hood itch free Copy-Sheet 3_1: -98091876
+      red hood itch free Copy-Sheet 3_88: 1867267435
+      red hood itch free Copy-Sheet 3_0: -1647022337
+      red hood itch free Copy-Sheet 3_104: -636788689
+      red hood itch free Copy-Sheet 3_77: -439722095
+      red hood itch free Copy-Sheet 3_31: 2099298361
+      red hood itch free Copy-Sheet 3_33: 4436983
+      red hood itch free Copy-Sheet 3_54: 1479580607
+      red hood itch free Copy-Sheet 3_19: 447307602
+      red hood itch free Copy-Sheet 3_15: 1886145013
+      red hood itch free Copy-Sheet 3_16: -1386491361
+      red hood itch free Copy-Sheet 3_62: 578125614
+      red hood itch free Copy-Sheet 3_67: -1993615768
+      red hood itch free Copy-Sheet 3_83: 343317607
+      red hood itch free Copy-Sheet 3_120: -1822303737
+      red hood itch free Copy-Sheet 3_125: 455043565
+      red hood itch free Copy-Sheet 3_107: 725240127
+      red hood itch free Copy-Sheet 3_91: -1047672919
+      red hood itch free Copy-Sheet 3_115: -579494341
+      red hood itch free Copy-Sheet 3_110: -459860329
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

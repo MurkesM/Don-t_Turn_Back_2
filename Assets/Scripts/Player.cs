@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     [SerializeField] SpriteRenderer _spriteRenderer;
     [SerializeField] Transform feet;
 
-    bool isGrounded = true;
+    bool _isGrounded = true;
 
     void Start()
     {
@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
 
     public void Jump()
     {
-        if (isGrounded == true)
+        if (_isGrounded == true)
         {
             _rigidbody.AddForce(Vector2.up * _jumpForce * Time.fixedDeltaTime, ForceMode2D.Impulse);
         }
@@ -50,14 +50,18 @@ public class Player : MonoBehaviour
 
     public void Slide(bool isSliding)
     {
-        _animator.SetBool("isSliding", isSliding);
-
         if (isSliding == true)
+        {
+            _animator.SetBool("isSliding", isSliding);
             _collider.size = new Vector2(0.16f, 0.16f);
+        }
         else
+        {
+            _animator.SetBool("isSliding", isSliding);
             _collider.size = new Vector2(0.16f, 0.31f);
-
-        //need to fix direction of sprite, probabaly best to fix it in the animation if possible to save on code
+        }
+        //Bug: need to fix direction of sprite, probabaly best to fix it in the animation if possible to save on code
+        //Bug: Can slide while in the air
     }
 
     public void Idle()
@@ -72,12 +76,12 @@ public class Player : MonoBehaviour
         if (hit != null)
         {
             _animator.SetBool("isJumping", false);
-            isGrounded = true;
+            _isGrounded = true;
         }
         else if (hit == null)
         {
             _animator.SetBool("isJumping", true);
-            isGrounded = false;
+            _isGrounded = false;
         }
     }  
 }
