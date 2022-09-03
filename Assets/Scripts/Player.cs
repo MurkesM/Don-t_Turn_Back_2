@@ -13,20 +13,21 @@ public class Player : MonoBehaviour
     [SerializeField] Transform feet;
 
     bool _isGrounded = true;
+    LayerMask _groundLayer;
 
     void Start()
     {
-        
+        _groundLayer = LayerMask.GetMask("Ground");
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        GroundCheck();
+            GroundCheck();
     }
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        GroundCheck();
+            GroundCheck();
     }
 
     public void MovePlayer(Vector2 direction)
@@ -69,7 +70,7 @@ public class Player : MonoBehaviour
 
     void GroundCheck()
     {
-        var hit = Physics2D.OverlapCircle(feet.position, 0.1f, LayerMask.GetMask("Ground"));
+        var hit = Physics2D.OverlapCircle(feet.position, 0.1f, _groundLayer);
 
         if (hit != null)
         {
