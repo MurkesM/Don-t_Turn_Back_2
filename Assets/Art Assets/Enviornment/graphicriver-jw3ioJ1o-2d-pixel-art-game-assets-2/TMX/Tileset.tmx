@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="120" height="30" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tmxtextures" tilewidth="32" tileheight="32">
+  <image source="tmxtextures.png" width="160" height="480"/>
+ </tileset>
+ <layer name="background" width="120" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt2DkOwjAURVEvBDbA0DPsf1+4A0WfAFJErJdzpNe4vdIv3BrJDj/u2Hea2fnNWMe/+uq8Dn2z6ZtN3235pu+rqjFZ9B3b3L39tHvxxlgufbti1/ZsduvbF9N3fEv31Xgs+mbTdxumfcmib7bqRpND22zTvv6Ls+gLAAAAAMBSHoxNLa4=
+  </data>
+ </layer>
+ <layer name="Objects" width="120" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt0TEOgCAQRFEOZqMm6P1PZE9Fg4ThvWa3nOSXAuzmbi5Z9M2mb7a3uWQ7Zg9gqHP2AIbSd11Xx6/vuvTNpm+2p+OvP20BAAAAAAAAAEjzAWpPBxE=
+  </data>
+ </layer>
+ <layer name="tileset" width="120" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt17sKwkAQBdBBBSOoH2ChhUb9/y80CxbpgmFfyDlwm2VZ2LnVDBExFM4haOVUIedqvwEAaG+bIbvZe5uFu9SVe//ZL9ylrjTzS+Tbf/TblzTzW8b39NuX3P0ep1xDv73I3W9yD932Qr//Lc39MeU5ZZydv75na/IO/fZi7Z7za2ijRr+0U7pf2irVL33QLwAAAAAAJXwANeMMqg==
+  </data>
+ </layer>
+ <layer name="Shadow gorizontal" width="120" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1zENAAAIA0HM4d8SYcIAS5O75CV0aBWQqp8DAABI5hMBy6YBAAAAAAAAAOAMzF4KPw==
+  </data>
+ </layer>
+ <layer name="Shadow vertikal" width="120" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt0QkJAAAIADHD2T+TKcSHLcHBRQBX5XQArfz9zd/f/AUAAAAAAAAAAAAAYIMCBlsBEQ==
+  </data>
+ </layer>
+ <layer name="Decor" width="120" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt2UEKgzAQBdDcSLGt3v9mRcjQIAZdSGPa9zaROGQTJ/g1pZTm9LHkccrjY+feasjjs5h7bWrGYh0AAIBeRA5aM05kmjGPkYUi+5R56lVZL+ZjjblSR3/iWSmz8bJXSNfsaXu18/VK43EJnfrG80NbvkFDG7V3pNq5OxTXMtE9nNmHyDq1TBz2/ivSznBccopeva+152r9tj2Hp8287PMbrupzAAAAAAD+wxuk1AoN
+  </data>
+ </layer>
+</map>
