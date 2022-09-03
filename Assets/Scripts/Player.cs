@@ -60,8 +60,6 @@ public class Player : MonoBehaviour
             _animator.SetBool("isSliding", isSliding);
             _collider.size = new Vector2(0.16f, 0.31f);
         }
-        //Bug: need to fix direction of sprite, probabaly best to fix it in the animation if possible to save on code
-        //Bug: Can slide while in the air
     }
 
     public void Idle()
