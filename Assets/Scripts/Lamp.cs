@@ -4,18 +4,13 @@ using UnityEngine;
 
 public class Lamp : MonoBehaviour
 {
-    [SerializeField] SpriteRenderer _spriteRenderer;
     [SerializeField] Sprite _lampOnSprite;
     [SerializeField] GameObject _light;
+    SpriteRenderer _spriteRenderer;
 
     void Start()
     {
-        
-    }
-
-    void Update()
-    {
-        
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void OnTriggerEnter2D(Collider2D collision)

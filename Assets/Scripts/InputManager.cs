@@ -5,9 +5,9 @@ using UnityEngine.InputSystem;
 
 public class InputManager : MonoBehaviour
 {
-    InputActions _inputActions;
     [SerializeField] Player _player;
-
+    InputActions _inputActions;
+    
     Vector2 _moveDirection;
 
     void Start()

@@ -6,11 +6,13 @@ public class Player : MonoBehaviour
 {
     [SerializeField] float _moveSpeed = 15;
     [SerializeField] float _jumpForce = 30;
-    [SerializeField] Rigidbody2D _rigidbody;
-    [SerializeField] CapsuleCollider2D _collider;
-    [SerializeField] Animator _animator;
-    [SerializeField] SpriteRenderer _spriteRenderer;
     [SerializeField] Transform feet;
+
+     Rigidbody2D _rigidbody;
+     CapsuleCollider2D _collider;
+     Animator _animator;
+     SpriteRenderer _spriteRenderer;
+    
 
     bool _isGrounded = true;
     LayerMask _groundLayer;
@@ -18,6 +20,11 @@ public class Player : MonoBehaviour
     void Start()
     {
         _groundLayer = LayerMask.GetMask("Ground");
+
+        _rigidbody = GetComponent<Rigidbody2D>();
+        _collider = GetComponent<CapsuleCollider2D>();
+        _animator = GetComponent<Animator>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void OnCollisionEnter2D(Collision2D collision)

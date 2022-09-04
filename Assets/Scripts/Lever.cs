@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class Lever : MonoBehaviour
 {
-    [SerializeField] Animator _animator;
+    [SerializeField] StoneWall _stoneWall;
+    Animator _animator;
+    Collider2D _collider;
 
     void Start()
     {
-        
+        _animator = GetComponent<Animator>();
+        _collider = GetComponent<Collider2D>();
     }
 
     void Update()
@@ -21,6 +24,8 @@ public class Lever : MonoBehaviour
         if (collision.tag == "Player")
         {
             _animator.SetBool("rotateLever", true);
+            StartCoroutine(_stoneWall.MoveRoutine());
+            _collider.enabled = false;
         }
     }
 }
