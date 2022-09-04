@@ -761,7 +761,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1936580593
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9fed908682c928b4b9cf567bda15562b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2026,11 +2026,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6808746430489993883, guid: 03ca9a8f0d4ef3541bed9d1c44e22f41,
         type: 3}
-      propertyPath: _collider
-      value: 
-      objectReference: {fileID: 849809576}
-    - target: {fileID: 6808746430489993883, guid: 03ca9a8f0d4ef3541bed9d1c44e22f41,
-        type: 3}
       propertyPath: _stoneWall
       value: 
       objectReference: {fileID: 1176916931}
@@ -2683,12 +2678,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &849809576 stripped
-CapsuleCollider2D:
-  m_CorrespondingSourceObject: {fileID: 6808746430489993885, guid: 03ca9a8f0d4ef3541bed9d1c44e22f41,
-    type: 3}
-  m_PrefabInstance: {fileID: 620714696}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &859719385
 PrefabInstance:
   m_ObjectHideFlags: 0

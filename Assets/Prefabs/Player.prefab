@@ -274,10 +274,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 2000
   _jumpForce: 300
-  _rigidbody: {fileID: 4908266347528464377}
-  _collider: {fileID: 218826081}
-  _animator: {fileID: 3308179692884006131}
-  _spriteRenderer: {fileID: 3308179692884006140}
   feet: {fileID: 2141535244}
 --- !u!114 &4200973470956498709
 MonoBehaviour:

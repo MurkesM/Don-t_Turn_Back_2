@@ -252,4 +252,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f463ea752ac3c247a322fec2aad498c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 6808746430489993882}
+  _stoneWall: {fileID: 0}

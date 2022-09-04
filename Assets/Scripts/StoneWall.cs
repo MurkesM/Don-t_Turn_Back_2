@@ -5,7 +5,7 @@ using UnityEngine;
 public class StoneWall : MonoBehaviour
 {
     [SerializeField] float _moveSpeed = 1;
-    [SerializeField] float _yDirection;
+    [SerializeField] float _yDirection = -1;
     [SerializeField] float _duration = 1;
 
     public void Move()
