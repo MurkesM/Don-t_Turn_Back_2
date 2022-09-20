@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] float _moveSpeed = 15;
-    [SerializeField] float _jumpForce = 30;
+    [SerializeField] float _currentMoveSpeed = 1500;
+    [SerializeField] float _normalMoveSpeed = 1500;
+    [SerializeField] float _slowMoveSpeed = 500;
+    [SerializeField] float _jumpForce = 300;
     [SerializeField] Transform feet;
+
 
      Rigidbody2D _rigidbody;
      CapsuleCollider2D _collider;
@@ -14,12 +18,14 @@ public class Player : MonoBehaviour
      SpriteRenderer _spriteRenderer;
     
 
-    bool _isGrounded = true;
-    LayerMask _groundLayer;
+     bool _isGrounded = true;
+     LayerMask _groundLayer;
+
 
     void Start()
     {
         _groundLayer = LayerMask.GetMask("Ground");
+
 
         _rigidbody = GetComponent<Rigidbody2D>();
         _collider = GetComponent<CapsuleCollider2D>();
@@ -37,9 +43,21 @@ public class Player : MonoBehaviour
         GroundCheck();
     }
 
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Web")
+            WebCheck(true);
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Web")
+            WebCheck(false);
+    }
+
     public void MovePlayer(Vector2 direction)
     {
-        _rigidbody.AddForce(_moveSpeed * Time.fixedDeltaTime * direction, ForceMode2D.Force);
+        _rigidbody.AddForce(_currentMoveSpeed * Time.fixedDeltaTime * direction, ForceMode2D.Force);
         _animator.SetBool("isRunning", true);
 
         if (direction.x > 0)
@@ -90,4 +108,19 @@ public class Player : MonoBehaviour
             _isGrounded = false;
         }
     }  
+
+    void WebCheck(bool isSlowed)
+    {
+        if (isSlowed == true)
+        {
+            _currentMoveSpeed = _slowMoveSpeed;
+            _rigidbody.gravityScale = 0.25f;
+        }
+
+        else if (isSlowed == false)
+        {
+            _currentMoveSpeed = _normalMoveSpeed;
+            _rigidbody.gravityScale = 1;
+        }
+    }
 }

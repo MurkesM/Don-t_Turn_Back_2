@@ -154,9 +154,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 330585547, guid: 6eccaf14acce11c418aef48586cc375f, type: 3}
-      propertyPath: m_Antialiasing
-      value: 1
+    - target: {fileID: 218826077, guid: 6eccaf14acce11c418aef48586cc375f, type: 3}
+      propertyPath: _moveSpeed
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 218826077, guid: 6eccaf14acce11c418aef48586cc375f, type: 3}
+      propertyPath: _slowSpeed
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 330585546, guid: 6eccaf14acce11c418aef48586cc375f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 3308179692884006130, guid: 6eccaf14acce11c418aef48586cc375f,
         type: 3}
@@ -171,7 +179,7 @@ PrefabInstance:
     - target: {fileID: 3308179692884006141, guid: 6eccaf14acce11c418aef48586cc375f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 2.36
       objectReference: {fileID: 0}
     - target: {fileID: 3308179692884006141, guid: 6eccaf14acce11c418aef48586cc375f,
         type: 3}
@@ -672,7 +680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1220150783
 Transform:
   m_ObjectHideFlags: 0
@@ -939,7 +947,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1906293619
 Transform:
   m_ObjectHideFlags: 0
